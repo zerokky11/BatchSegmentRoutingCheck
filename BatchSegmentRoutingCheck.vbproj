@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Library</OutputType>
+		<RootNamespace>BatchSegmentRoutingCheck</RootNamespace>
+		<AssemblyName>BatchSegmentRoutingCheck</AssemblyName>
+		<TargetFramework>net48</TargetFramework>
+		<LangVersion>latest</LangVersion>
+		<OptionStrict>On</OptionStrict>
+		<OptionExplicit>On</OptionExplicit>
+		<OptionInfer>On</OptionInfer>
+		<Platforms>x64</Platforms>
+		<PlatformTarget>x64</PlatformTarget>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Reference Include="RevitAPI">
+			<HintPath>C:\Program Files\Autodesk\Revit 2019\RevitAPI.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+		<Reference Include="RevitAPIUI">
+			<HintPath>C:\Program Files\Autodesk\Revit 2019\RevitAPIUI.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+		<Reference Include="System.Windows.Forms" />
+		<Reference Include="System.Drawing" />
+		<Reference Include="System.Data" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<!-- NPOI.OOXML 제거하고 NPOI 하나만 사용 -->
+		<PackageReference Include="NPOI" Version="2.7.1" />
+	</ItemGroup>
+
+</Project>
